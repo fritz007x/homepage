@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.hero-content {
+  max-width: 620px;
+  text-align: center;
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #58a6ff, #bc8cff);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d1117;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #58a6ff, #bc8cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #8b949e;
+  margin-bottom: 1.25rem;
+}
+
+.bio {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #c9d1d9;
+  margin-bottom: 2rem;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-tag {
+  background: #161b22;
+  border: 1px solid #30363d;
+  color: #58a6ff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.skill-tag:hover {
+  border-color: #58a6ff;
+  background: #1a2332;
+}
+
+/* Links */
+.links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 0.5rem;
+  background: #21262d;
+  color: #e6edf3;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid #30363d;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+}
+
+.link-btn:hover {
+  border-color: #58a6ff;
+  background: #1a2332;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #484f58;
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-btn {
+    width: 100%;
+    max-width: 220px;
+    justify-content: center;
+  }
+}
